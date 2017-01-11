@@ -67,5 +67,5 @@ body a{
 }
 body a:hover{
     text-decoration: underline;
-    color:white;
+    color:red;
 }
