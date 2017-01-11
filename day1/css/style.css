@@ -1,0 +1,70 @@
+span {
+    color: red;
+    font-weight: bold;
+}
+h1 {
+	color: aqua;
+}
+a {
+	font-weight: bold;
+}
+body{
+	background-color: #E6E6FA;
+}
+
+p {
+	background-color: rgba(0,0,0, 0.5 );
+}
+
+
+
+
+
+
+span {
+	background-color: lightblue;
+}
+
+.green {
+	background-color: #ADFF2F;
+}
+
+.red {
+	background-color: #FF00FF;
+}
+
+.blue {
+	background-color: #40E0D0;
+}
+
+p.blue > a {
+	color: yellow;
+}
+
+p > a{
+	color: white;
+}
+
+li.seen {
+	color:silver;
+}
+li.unseen {
+	color:red;
+	text-shadow: 1px 1px;
+}
+
+li.good {
+	color:green;
+	text-shadow:1px 1px;
+}
+
+li.bad {
+	color: silver;
+}
+
+body a{
+    text-decoration: none;
+}
+body a:hover{
+    text-decoration: underline;
+}
