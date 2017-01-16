@@ -1,0 +1,25 @@
+body{
+	background-color:purple;
+}
+
+#first{
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+
+}
+
+#second{
+	border-width: 10px;
+	border-color:blue;
+	border-style: dotted;
+}
+
+#third{
+	border-color: green;
+	border-style:solid;
+	border-width-top: 3px;
+	border-bottom-width: 3px;
+	border-right-width: 1px;
+	border-left-width: 0px;
+}
