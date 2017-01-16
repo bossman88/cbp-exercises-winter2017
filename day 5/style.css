@@ -1,0 +1,42 @@
+h1 {
+	color:orange;
+}
+#foo.main {
+	color:cyan;
+}
+
+.main p {color: skyblue;
+        
+}
+
+div  {
+	border: 10px solid black;
+
+}
+.wrapper {
+	display: flex;
+	background-color: cyan;
+}
+.main {
+	flex:1;
+	background-color: grey;
+	border:5px solid red;
+	width: 30%;
+	margin:10px 10px;
+	padding: 50px;
+	display: inline;
+	overflow: hidden;
+	box-sizing: border-box;
+
+}
+
+
+
+body{
+	font-size: 20px;
+}
+.sub{
+	color:skyblue;
+}
+
+body div.main p {color:crimson;}

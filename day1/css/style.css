@@ -4,18 +4,29 @@ span {
 }
 h1 {
 	color: aqua;
+	font-size: 4.5em;
+	font-weight: normal;
+}
+h2 {
+	font-variant: small-caps; 
 }
 a {
 	font-weight: bold;
 }
 body{
 	background-color: #E6E6FA;
+	font-family: 'Kaushan Script', cursive;
 }
 
 p {
 	background-color: rgba(0,0,0, 0.5 );
+	font-family: ;
+	line-height:1.1em;
 }
 
+h1,h2, h3{
+	font-family: 'Bungee Shade', cursive;;
+}
 
 
 

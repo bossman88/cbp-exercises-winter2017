@@ -1,0 +1,44 @@
+.main p {
+    color:green;
+}
+
+
+.boom {
+    margin-top: 20px;
+    border:10px solid;
+    box-sizing: border-box;
+    flex:1;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+}
+
+.floating {
+    float:left;
+    max-width: 150px;
+    max-height:250px;
+    margin:0 10px 10px 0;
+    position:static;
+}
+
+.clear {
+    clear: both;
+}
+
+.bg-container {
+    background-color:pink;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: inline;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+
+.myself {
+    top:400px;
+}

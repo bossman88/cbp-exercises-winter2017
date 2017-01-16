@@ -1,0 +1,49 @@
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.number1 p::first-letter{
+    font-size: 3em;
+    float:left;
+    line-height: 1em;
+}
+
+p {
+    border-left: 2px solid blue;
+    padding-left: 20px;
+}
+
+.number2 p::first-letter{
+    font-size: 300%;
+    float:left;
+    float:inherit;
+}
+
+.number3 p::first-letter{
+    font-size: 300%;
+    float:left;
+    float:initial;
+}
+
+.number4 p::first-letter{
+    font-size: 300%;
+    float:center;
+    float:none;
+}
+
+.container {
+    max-width: 1200px;
+    max-height: 600px;
+    overflow: scroll;
+    margin:0 auto;
+    padding:10px;
+}
+
+.header {
+    background-color:gray;
+    height:50px;
+    margin-right: 340px;
+    min-width: 200px;
+}

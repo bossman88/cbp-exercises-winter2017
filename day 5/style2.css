@@ -1,0 +1,36 @@
+.wrapper {
+	display: flex;
+	background-color: cyan;
+}
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+
+.one {
+	background-color: cyan;
+	float:left;
+	height: 300px;
+	width: 300px;
+	margin-left: 50px;
+	margin-top: -40px;
+}
+.two {
+	background-color:red;
+	float:right;
+	height: 120px;
+	width: 300px;
+	margin-right: 200px;
+	margin-top: -40px;
+}
+.top {
+	background-color:pink;
+}
+p{
+	text-align:center;
+}
+h1 {
+	text-align: center;
+}

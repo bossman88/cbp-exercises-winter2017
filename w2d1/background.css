@@ -1,0 +1,39 @@
+
+
+.inner {
+    margin: 1em;
+    border: 1px solid red;
+    background-color: white;
+    z-index: 2;
+    position:relative;
+}
+
+
+
+.outer {
+    margin:1em;
+    padding: 3em;
+    border: 1px solid black;
+    background-color:red ;
+    position: relative;
+    background: linear-gradient(-90deg, red, yellow);
+}
+
+.green {
+    background-color: green;
+    position: absolute;
+    width:50%;
+    height: 100%;
+    z-index:0;
+    top:0;
+    right:0;
+
+}
+
+.smiling {
+    width:200px;
+    height: 200px;
+    border: 1px white;
+    background-image: url(/smiley.png;);
+    background-position: center center;
+}
