@@ -28,7 +28,12 @@ h1,h2, h3{
 	font-family: 'Bungee Shade', cursive;;
 }
 
-
+div.biography {
+	border:8px solid black;
+	display: flex;
+	
+    flex: 1 100%;
+}
 
 
 
@@ -79,4 +84,26 @@ body a{
 body a:hover{
     text-decoration: underline;
     color:red;
+}
+
+div.red {
+   
+	background-color: red;
+}
+
+ .absolute-element {
+	position:absolute;
+	color:white;
+	background-color: black;
+}
+
+ol.circle {list-style-type: circle;}
+
+ul {
+    list-style-position: outside;
+}
+
+li {
+    list-style-image: url('http://classes.codingbootcamp.cz/assets/classes/8/bullet.png
+');
 }

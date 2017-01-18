@@ -1,0 +1,20 @@
+.message {
+  background: gray;
+  height: 30px;
+  margin-bottom: 0.25em;
+  width: auto;
+  padding: 0.5em 1empx;
+  border: 1px black;
+  background-color: #ccc;
+  background: #cccccc url('http://classes.codingbootcamp.cz/assets/classes/8/info.png') 1em center;
+  background-size: 1em auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding-left: 3em;
+}
+.message {
+  list-style-image: url('g');
+}
+.message.success {
+  background-color: border-color;
+}

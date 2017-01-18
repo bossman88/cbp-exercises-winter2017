@@ -1,0 +1,40 @@
+body {
+    background:red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@import 'shadows';
+
+
+p{
+    @extend .z-depth-1;
+    line-height: 2em;
+}
+
+
+@mixin border-radius($radius){
+    padding: $radius;
+}
+
+@mixin border($width,$style,$color) {
+    border:$width solid red;
+}
+
+@mixin nice_line_spacing($font-size){
+    line-height:$font-size*2;
+}
+
+p {
+    
+    @include nice_line_spacing(14px);
+    
+}
+
+
+
+.box{
+    @include border-radius(10px)
+}
+
+
+
