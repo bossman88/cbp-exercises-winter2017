@@ -10,11 +10,13 @@ require_once('my-functions.php');
 // get_name()
 // get_rating()
 
+//isset($_GET['id']); // true if key 'id' exists within $_GET
 
-if (isset( $_GET['id']); // true if key id exists within $_get 
-
-// get id from the URL's GET parameters
-$unique_id = $_GET['id'];
+if(isset($_GET['id']))
+{
+    // get id from the URL's GET parameters
+    $unique_id = $_GET['id'];
+}
 
 ?>
 <!DOCTYPE html>
@@ -29,11 +31,20 @@ $unique_id = $_GET['id'];
         <a href="list.php">A list of movies</a>
     </nav>
 
-    <h1><?php echo get_name($unique_id); // echo name based on the unique id ?></h1>
 
-    <div class="rating">
-        Rating: <strong><?php echo get_rating($unique_id); // echo rating based on the unique id ?></strong>
-    </div>
+    <?php if(isset($unique_id)) : ?>
+        
+        <h1><?php echo get_name($unique_id); // echo name based on the unique id ?></h1>
+
+        <div class="rating">
+            Rating: <strong><?php echo get_rating($unique_id); // echo rating based on the unique id ?></strong>
+        </div>
+
+    <?php else : ?>
+
+        Sorry, page not found.
+
+    <?php endif; ?>
 
 
 </body>

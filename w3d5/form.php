@@ -35,7 +35,7 @@ if (!empty($_POST)) {
         <option value:"lol"> LOL Republic </option>
         <option value:"omg"> Omg Republic </option>
         <option value:"true"> True Republic </option>
-        <br><br>
+        <br>
 
         <br><hr>
         Really?
