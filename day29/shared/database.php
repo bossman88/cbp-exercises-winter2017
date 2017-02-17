@@ -49,13 +49,37 @@ public function getproduct($id)
         return $this->db->lastInsertId();
 
     }
+    public function insertproducttoorder($productid, $orderid)
+	{
+		$stmt = $this->db->prepare('INSERT INTO orders_have_products (product_id, order_id) VALUES (?, ?)');
+		$stmt->execute([$productid, $orderid]);
+		return $this->db->lastInsertId();
+	}
 
     public function insertuser($name, $email, $password)
     {
         $stmt =$this-> db->prepare('INSERT INTO users (name, email, password) VALUES (?, ?, ?)');
-        $stmt->execute([$name, $email, $password]);
+        $stmt->execute([$name, $email, password_hash($password, PASSWORD_DEFAULT)]);
         return $this->db->lastInsertId();   //will return insert autoincrement id 
     }
+
+    public function getuser($id)
+    {
+        $stmt = $this->db->prepare('SELECT id,name, email, password FROM users WHERE id = ?');
+      $stmt->execute([$id]);    
+      return $stmt->fetch();
+    }
+
+
+
+    public function getuserbyemail($email)
+    {
+         $stmt = $this->db->prepare('SELECT id,name, email, password FROM users WHERE email = ?');
+      $stmt->execute([$email]);    
+      return $stmt->fetch();
+    }
+
+    
     
 }
 
