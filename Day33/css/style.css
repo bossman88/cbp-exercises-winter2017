@@ -1,0 +1,37 @@
+#box {
+    position:absolute;
+    left:50%;
+    top:50%;
+    border: 1px solid red;
+    padding:1em;
+    width: 200px;
+    background-color: indianred;
+    opacity: 0.7;
+    
+}
+
+#box {
+  
+    transform: rotateZ(50deg);
+    
+   
+}
+
+#box1 {
+    position:absolute;
+    border: 1px solid blue;
+    padding:1em;
+    width: 200px;
+    background-color: darkslateblue;
+    opacity: 0.5;
+    left:40%;
+    top:40%;
+}
+
+#box1 {
+    transform: translate(50px, 200px);
+    transform-origin: 0% 0%;
+      transform: rotateZ(50deg);
+    
+   
+}

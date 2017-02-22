@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+
+
+
+
+        <script>
+           var kids;
+
+           do {
+            kids =  prompt('How many children do you have ? ');
+        } while (isNaN(kids) || kids < 0 || kids > 100);
+
+
+
+        var names="";
+      if(kids !=0) {
+          for(var i = 0; i < kids; i++){
+              var name = prompt('What is the name of your '+(i+1) +' kid?');
+
+              if(i ==(kids - 1)){
+              names += name + ', ';
+              }
+          }
+
+          alert('say hi to ' + names);
+      }
+
+        
+
+        </script>
+    </body>
+</html>

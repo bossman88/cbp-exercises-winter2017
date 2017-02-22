@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+   
+
+        <button id="btn1" onclick="myFunction()">Click me!</button>
+       <button id="btn2">Click me</button>
+
+
+       <script>
+       
+           document.getElementById('btn2').onclick = myFunction;
+           function myFunction(){
+               alert('hey, u clicked me!')
+           }
+       </script>
+    </body>
+</html>
+
