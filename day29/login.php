@@ -30,6 +30,7 @@ if ($_POST) {
     </head>
     <body>
       
+      <div class=container-fluid>
         <h1>Login page</h1>
         <form action-"" method="post">
             Email:<br>
@@ -39,7 +40,7 @@ if ($_POST) {
             <input type="submit" value="login">
 
         </form>
-      
+      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="admin/js/javascript.js"></script>

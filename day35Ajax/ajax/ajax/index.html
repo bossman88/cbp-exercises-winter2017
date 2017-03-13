@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/prezi.css">
+    
+</head>
+<body>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>AJAX</h1>
+            <h3>Slavo Kožár</h3>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Problem</h1>
+            <h3>Get data from / to server without refresh the page</h3>
+
+            <ul>
+                <li>Frames - http://www.idocs.com/tags/graphics/recipes.gif</li>
+                <li>Images</li>
+                <li>AJAX</li>
+            </ul>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>What is AJAX?</h1>
+            <p>AJAX = Asynchronous JavaScript And XML.</p>
+            <h3>AJAX is not a programming language.</h3>
+        </div>
+        <div class="footer"></div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>What is AJAX?</h1>
+            <p>AJAX just uses a combination of :
+            <p>A browser built-in XMLHttpRequest object (to request data from a web server)</p>
+            <p>JavaScript and HTML DOM (to display or use the data)</p>
+            </p>
+        </div>
+        <div class="footer"></div>        
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>What is AJAX?</h1>
+            <p>AJAX is a misleading name. AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or JSON text.</p>
+            <p>AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.</p>
+        </div>
+        <div class="footer"></div>        
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>What is AJAX?</h1>
+            <p>AJAX is a developer's dream, because you can:</p>
+            <p>Update a web page without reloading the page</p>
+            <p>Request data from a server - after the page has loaded</p>
+            <p>Receive data from a server - after the page has loaded</p>
+            <p>Send data to a server - in the background</p>
+        </div>
+        <div class="footer"></div>        
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>How AJAX works</h1>
+            <ol>
+                <li>An event occurs in a web page (the page is loaded, a button is clicked)</li>
+                <li>An XMLHttpRequest object is created by JavaScript</li>
+                <li>The XMLHttpRequest object sends a request to a web server</li>
+                <li>The server processes the request</li>
+                <li>The server sends a response back to the web page</li>
+                <li>The response is read by JavaScript</li>
+                <li>Proper action (like page update) is performed by JavaScript</li>
+            </ol>
+        </div>
+        <div class="footer"></div>        
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Introduction</h1>
+            <h3>theory</h3
+            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>The XMLHttpRequest Object</h1>
+
+            <p>All modern browsers support the XMLHttpRequest object.</p>
+            <p>The XMLHttpRequest object is used to exchange data with a server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Create an XMLHttpRequest Object</h1>
+
+            <p>All modern browsers (Chrome, IE7+, Firefox, Safari, and Opera) have a built-in XMLHttpRequest object.
+                <pre>variable = new XMLHttpRequest();</pre>
+            </p>
+            <p>Old versions of Internet Explorer (IE5 and IE6) use an ActiveX Object:
+                <pre>variable = new ActiveXObject("Microsoft.XMLHTTP");</pre>
+            </p>
+            <p>To handle all browsers, including IE5 and IE6, check if the browser supports the XMLHttpRequest object. If it does, create an XMLHttpRequest object, if not, create an ActiveXObject.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>AJAX Example:</h1>
+<pre>            
+var xhttp;
+if (window.XMLHttpRequest) {
+	xhttp = new XMLHttpRequest();
+} else {
+    	// code for IE6, IE5
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+</pre>
+            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Response from server</h1>
+            <h3>onreadystatechange</h3>
+            <p>Defines a function to be called when the readyState property changes.</p>
+            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>readyState</h1>
+            
+<p>Holds the status of the XMLHttpRequest.
+<ul>     
+<li>0: request not initialized</li> 
+<li>1: server connection established</li>
+<li>2: request received</li>
+<li>3: processing request</li>
+<li>4: request finished and response is ready</li>
+</ul>
+</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>status</h1>
+            
+
+<ul>
+<li>200: "OK"</li>
+<li>403: "Forbidden"</li>
+<li>404: "Page not found"</li>
+</ul>
+
+<p>For a complete list go to the <a target="_blank" href="http://www.w3schools.com/tags/ref_httpmessages.asp">Http Messages Reference</a>.
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<pre>
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML =this.responseText;
+    }
+};
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>AJAX via jQuery</h1>
+            <p>jQuery solves creation of XMLHttpRequest on different browsers and also detecting states of XMLHttpRequest and providing callback functions for most common states.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>AJAX via jQuery</h1>
+<pre>
+$.ajax({
+    “url” : "example.php",
+    “type” : “post”,
+    “data” : {
+	    “a” : “value”
+    }
+})
+.done(function(data) {
+    alert( "success" );
+})
+.fail(function(jqXHR, textStatus) {
+    alert( "error" );
+})
+.always(function() {
+    alert( "complete" );
+});
+</pre>            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Data formats</h1>
+            <p>What data formats can be received from server using AJAX?</p>
+
+
+            <p>AJAX was originally designed to use with XML.</p>
+            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h2>XML</h2>
+<pre>
+&lt;?xml version="1.0"?&gt;
+&lt;products&gt;
+&lt;name&gt;Notebook&lt;/name&gt;
+&lt;name&gt;Keyboard&lt;/name&gt;
+&lt;name&gt;Mouse&lt;/name&gt;
+&lt;/products&gt;            
+</pre>
+            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h2>JSON</h2>
+            <p>JavaScript Object Notation</p>
+<pre>
+{
+	"products": [
+		{“name”:”Notebook”},
+		{“name”:”Keyboard”},
+		{“name”:”Mouse”},
+    ]
+}
+</pre>
+<p>Have you seen this data format?</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h2>JSON</h2>
+            <h3>Using JSON</h3>
+            <p>JavaScript provides simple functions for easy implementation of JSON into your code: JSON.parse() and JSON.stringify().</p>
+            <p>PHP also provides functions for JSON : json_encode, json_decode.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h2>HTML</h2>
+            <p>Also formatted HTML can be transfered using AJAX.</p>
+<pre>
+$.ajax({
+    “url” : "example.php",
+})
+.done(function(data) {
+    $(“#content”).replace(data);
+})
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>THX</h1>
+            <h3>Let's practise!</h3>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/prezi.js"></script>
+
+</body>
+</html>

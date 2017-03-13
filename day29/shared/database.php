@@ -79,7 +79,21 @@ public function getproduct($id)
       return $stmt->fetch();
     }
 
-    
+    //transactions stuff below
+    public function beginTransaction()
+    {
+        $this->db->beginTransaction();
+    }
+
+    public function commitTransaction()
+    {
+        $this->db->commit();
+    }
+
+    public function rollBackTransaction()
+    {
+        $this->db->rollBack();
+    }
     
 }
 

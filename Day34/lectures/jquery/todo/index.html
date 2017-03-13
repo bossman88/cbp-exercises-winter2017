@@ -68,7 +68,7 @@
                 $('.todo-list li').not('.completed').show();
 
             }else if (href == "#/completed"){
-                 $('.todo-list li').not('.completed').hide();
+                 $('.a-list li').not('.completed').hide();
                  $('.todo-list li').filter('.completed').show();
             }
 
@@ -78,6 +78,12 @@
 $('.clear-completed').click(function(){
     $('.todo-list li').filter('.completed').remove();
 });
+
+$('.new-todo').keyup(function(event){
+    var $input = $(event.target);
+})
+
+
            
 
             var state = {
@@ -85,6 +91,7 @@ $('.clear-completed').click(function(){
                     { text: 'Hi', completed: true  },
                     { text: 'Hello', completed: false },
                     { text: 'Hi there!', completed: true },
+                    { text: 'Hola', completed: false },
                 ],
                 filter: 'all'
             };

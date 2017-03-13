@@ -1,0 +1,15 @@
+.big_text {
+    line-height: 3em;
+}
+
+input:valid  { 
+    background-color:  #CDFFD3;
+    background-image: url('../check.png');
+    background-position: right 5px bottom 15px;
+    background-repeat: no-repeat;
+    background-size:1.7em;
+}
+
+input:invalid {
+    background-color:  yellow;
+ }
