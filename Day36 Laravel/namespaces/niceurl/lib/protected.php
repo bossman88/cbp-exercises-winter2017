@@ -1,0 +1,4 @@
+<?php
+
+
+die('THIS FILE WAS SUPPOSED TO BE PROTECTED!!');

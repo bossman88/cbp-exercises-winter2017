@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AngularJS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://code.angularjs.org/latest/angular.js"></script>
+        <script src="https://code.angularjs.org/latest/angular-route.js"></script>
+
+        <script src="myApp.module.js"></script>
+        <script src="studentList.controller.js"></script>
+        <script src="productDetail.controller.js"></script>
+    </head>
+    <body>
+        <script>
+            //create a module
+            var my_module = angular.module('myModule', []);
+
+            //resolve the created module
+            var that_module_i_created = angular.module('myModule');
+            //create module with dependency on 'ngRoute' moudle
+            //dependency another module , which this module needs to work
+            var another_module = angular.module('moduleWithRouting', ['ngRoute']);
+        </script>
+
+
+        <h1>Angular Application</h1>
+    
+<div class="calc" ng-app="myApp" ng-init="name = 'Bob'; color = 'red'">
+    <div>The result of the calculation is {{ 3 + 3 }}</div>
+    <div> ng-bind="3+3" inside span element = That is the same as <span ng-bind="3+3"></span> </div>
+
+    <div style="color: {{color}} ">Name is {{name}}</div>
+
+<h2>controller studentList</h2>
+    <div ng-controller="studentList" >
+        There are <strong>{{total_students -unofficial_quitters}}</strong> in the course. <br>
+        
+        <!--The monster says {{ $cntrl.property_of_the_controller }}-->
+
+        There are <strong>{{countMissingStudents()}}</strong> student/students missing today. <br>
+
+   
+
+        <ul>
+            <li ng-repeat="student in students">
+                <h3>{{student.name }}</h3>
+                <div>Present: {{student.present}}</div>
+            </li>
+        </ul>
+
+
+        <input type="text" value="Kosta" ng-model="my_name" />
+        <br>
+        My name is {{my_name}}
+
+    </div>
+
+<h2>productdetail controller</h2>
+    <div ng-controller="productDetail">
+        <h2>{{product_name}}</h2>
+        <div class="description">
+            {{description}}
+        </div>
+    </div>
+
+
+
+    </body>
+</html>
