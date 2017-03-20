@@ -12,6 +12,7 @@
         <script src="myApp.module.js"></script>
         <script src="studentList.controller.js"></script>
         <script src="productDetail.controller.js"></script>
+        <script src="greetMe.directive.js"></script>
     </head>
     <body>
         <script>
@@ -47,7 +48,7 @@
         <ul>
             <li ng-repeat="student in students">
                 <h3>{{student.name }}</h3>
-                <div>Present: {{student.present}}</div>
+                <div>Present: <span ng-show="student.present"> Yes</span> <span ng-hide="student.present">No</span> </div>
             </li>
         </ul>
 
@@ -55,6 +56,10 @@
         <input type="text" value="Kosta" ng-model="my_name" />
         <br>
         My name is {{my_name}}
+        <br> <br>
+        
+        
+        <greet-me></greet-me>
 
     </div>
 

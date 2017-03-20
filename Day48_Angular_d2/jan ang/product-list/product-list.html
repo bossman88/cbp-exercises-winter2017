@@ -1,0 +1,19 @@
+  <ul >
+
+
+        <input type="text" ng-model="product_filter" />
+
+        <select ng-model="order_by">
+                <option value="price">Order by price</option>
+                <option value="name">Order by name</option>
+        </select>
+
+        ASC: <input type="radio" name="order_way" value="asc" ng-model="order_way" checked />
+        DESC: <input type="radio" name="order_way" value="desc" ng-model="order_way" />
+
+        <li ng-repeat="product in products | filter: product_filter | orderBy: order_by : order_way=='desc'">
+            <h3>{{ product.name }}</h3>
+            <div class="price">{{ product.price | currency : '' | czCurrency }}</div>
+        </li>
+
+    </ul>

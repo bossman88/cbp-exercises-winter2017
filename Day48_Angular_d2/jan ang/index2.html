@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular application</title>
+
+    <script src="https://code.angularjs.org/latest/angular.js"></script>
+    <script src="https://code.angularjs.org/latest/angular-route.js"></script>
+
+    <script src="myApp.module.js"></script>
+    <script src="myApp.config.js"></script>
+    <script src="czCurrency.filter.js"></script>
+    <script src="product-list/product-list.component.js"></script>
+    <script src="product-list/productList.controller.js"></script>
+</head>
+<body>
+    <navigation></navigation>
+    <ng-view></ng-view>
+
+</body>
+</html>
